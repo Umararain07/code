@@ -1,0 +1,445 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        PakWheels Clone
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+    <!-- Top Bar -->
+    <div class="bg-black text-white text-xs flex justify-between items-center px-4 sm:px-6 md:px-10 h-7">
+        <div class="flex items-center space-x-1">
+            <i class="fas fa-mobile-alt text-[9px]">
+            </i>
+            <span>
+                Download App via SMS
+            </span>
+        </div>
+        <div class="flex space-x-3 text-[11px]">
+            <button class="hover:underline">
+                Sign Up
+            </button>
+            <span>
+                |
+            </span>
+            <button class="hover:underline">
+                Sign In
+            </button>
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav
+        class="bg-gradient-to-b from-[#00172f] to-[#002a52] px-4 sm:px-6 md:px-10 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex items-center space-x-6 mb-3 sm:mb-0">
+            <img alt="PakWheels logo with white text on dark blue background" class="h-7 w-auto" height="30"
+                src="https://storage.googleapis.com/a1aa/image/021b34f9-209d-46c6-7c6b-ee87b12b42f4.jpg" width="120" />
+            <ul class="hidden sm:flex space-x-5 text-white text-sm font-semibold">
+                <li>
+                    <a class="hover:underline" href="#">
+                        Used Cars
+                    </a>
+                </li>
+                <li>
+                    <a class="hover:underline" href="#">
+                        New Cars
+                        <span class="text-xs font-normal">
+                            (New)
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="hover:underline" href="#">
+                        Bikes
+                    </a>
+                </li>
+                <li>
+                    <a class="hover:underline" href="#">
+                        Auto Store
+                    </a>
+                </li>
+                <li>
+                    <a class="hover:underline" href="#">
+                        Videos
+                    </a>
+                </li>
+                <li>
+                    <a class="hover:underline" href="#">
+                        Forums
+                    </a>
+                </li>
+                <li>
+                    <a class="hover:underline" href="#">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center hover:underline" href="#">
+                        More
+                        <span class="ml-1 bg-blue-600 text-white text-[9px] rounded px-1 font-semibold">
+                            New
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex space-x-3">
+            <button aria-label="Post an Ad"
+                class="bg-red-600 hover:bg-red-700 text-white text-sm font-semibold px-4 py-1 rounded flex items-center">
+                Post an Ad
+                <i class="fas fa-caret-down ml-1">
+                </i>
+            </button>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-[#00172f] to-[#002a52] text-white text-center py-16 px-4 sm:px-6 md:px-10">
+        <h1 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-2">
+            Find Used Cars in Pakistan
+        </h1>
+        <p class="text-xs sm:text-sm md:text-base mb-6 font-normal max-w-xl mx-auto">
+            With thousands of cars, we have just the right one for you
+        </p>
+        <form aria-label="Search used cars" class="flex max-w-3xl mx-auto space-x-2 text-gray-700" role="search">
+            <input class="rounded-l border border-gray-300 text-sm px-3 py-2 w-1/3 focus:outline-none"
+                placeholder="Car Make or Model" type="text" />
+            <select aria-label="Select City"
+                class="border-t border-b border-gray-300 text-sm px-3 py-2 w-1/3 focus:outline-none">
+                <option>
+                    All Cities
+                </option>
+            </select>
+            <select aria-label="Select Price Range"
+                class="rounded-r border border-gray-300 text-sm px-3 py-2 w-1/3 focus:outline-none">
+                <option>
+                    Price Range
+                </option>
+            </select>
+            <button aria-label="Search" class="bg-green-600 hover:bg-green-700 text-white px-4 rounded" type="submit">
+                <i class="fas fa-search">
+                </i>
+            </button>
+        </form>
+        <button class="mt-4 text-xs border border-gray-400 rounded px-3 py-1 hover:bg-gray-700 hover:text-white"
+            type="button">
+            Advanced Filter &gt;
+        </button>
+    </section>
+    <!-- Sell Your Car Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 py-8">
+        <h2 class="text-center text-sm font-semibold mb-6">
+            Sell Your Car on PakWheels and Get the Best Price
+        </h2>
+        <div class="flex flex-col sm:flex-row border border-gray-300 rounded max-w-4xl mx-auto">
+            <!-- Left Box -->
+            <div class="flex-1 border-b sm:border-b-0 sm:border-r border-gray-300 p-6">
+                <h3 class="text-xs font-semibold text-blue-700 mb-2 hover:underline cursor-pointer">
+                    Post your Ad on PakWheels
+                </h3>
+                <ul class="text-xs text-gray-600 mb-4 space-y-1">
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-check text-green-600 text-[10px]">
+                        </i>
+                        <span>
+                            Post your Ad for Free in 3 Easy Steps
+                        </span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-check text-green-600 text-[10px]">
+                        </i>
+                        <span>
+                            Get Genuine offers from Verified Buyers
+                        </span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-check text-green-600 text-[10px]">
+                        </i>
+                        <span>
+                            Sell your car Fast at the Best Price
+                        </span>
+                    </li>
+                </ul>
+                <button aria-label="Post Your Ad"
+                    class="bg-red-700 hover:bg-red-800 text-white text-xs font-semibold px-4 py-2 rounded">
+                    Post Your Ad
+                </button>
+            </div>
+            <!-- OR Separator -->
+            <div class="flex items-center justify-center px-4 py-6 text-xs font-semibold text-gray-500">
+                OR
+            </div>
+            <!-- Right Box -->
+            <div class="flex-1 p-6">
+                <h3 class="text-xs font-semibold text-blue-700 mb-2 hover:underline cursor-pointer">
+                    Try PakWheels Sell It For Me
+                </h3>
+                <ul class="text-xs text-gray-600 mb-4 space-y-1">
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-check text-green-600 text-[10px]">
+                        </i>
+                        <span>
+                            Dedicated Sales Expert to Sell your Car
+                        </span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-check text-green-600 text-[10px]">
+                        </i>
+                        <span>
+                            We Bargain for you and share the Best Offer
+                        </span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-check text-green-600 text-[10px]">
+                        </i>
+                        <span>
+                            We ensure Safe &amp; Secure Transaction
+                        </span>
+                    </li>
+                </ul>
+                <button aria-label="Register Your Car"
+                    class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-4 py-2 rounded">
+                    Register Your Car
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Browse Used Cars Section -->
+    <section class="bg-gray-50 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10">
+            <h3 class="text-sm font-semibold mb-4">
+                Browse Used Cars
+            </h3>
+            <div
+                class="flex flex-wrap items-center space-x-4 overflow-x-auto text-xs font-semibold text-gray-600 border-b border-gray-300 pb-2 mb-4">
+                <button class="border-b-2 border-blue-600 pb-1 text-blue-600">
+                    Category
+                </button>
+                <button class="hover:text-blue-600">
+                    City
+                </button>
+                <button class="hover:text-blue-600">
+                    Make
+                </button>
+                <button class="hover:text-blue-600">
+                    Model
+                </button>
+                <button class="hover:text-blue-600">
+                    Budget
+                </button>
+                <button class="hover:text-blue-600">
+                    Body Type
+                </button>
+            </div>
+            <!-- Car Categories Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-6 gap-3">
+                <!-- Each card -->
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing Automatic cars category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/0ce4c5f8-e165-4165-b38b-7bf5538431f0.jpg"
+                        width="40" />
+                    Automatic cars
+                </div>
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing Family Cars category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/86973706-f953-443b-b88a-01705f3f859a.jpg"
+                        width="40" />
+                    Family Cars
+                </div>
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing Small cars category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/c8453be1-f5a4-43c5-1e8c-6d015516acb0.jpg"
+                        width="40" />
+                    Small cars
+                </div>
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing 5 Seater category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/30d2169e-6376-4580-1ef4-0447d183cb42.jpg"
+                        width="40" />
+                    5 Seater
+                </div>
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing Big cars category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/d94104ae-a080-4907-3b1d-7b5ef87d3df0.jpg"
+                        width="40" />
+                    Big cars
+                </div>
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing Imported cars category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/96028436-c382-41ea-a7af-36bf314ac5f6.jpg"
+                        width="40" />
+                    Imported cars
+                </div>
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing Old Cars category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/b7ccf4e5-213b-4e51-e1b0-59895bf40c67.jpg"
+                        width="40" />
+                    Old Cars
+                </div>
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing 5 Door category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/63bd09f8-0bd1-43a7-8242-06927c9b5bd6.jpg"
+                        width="40" />
+                    5 Door
+                </div>
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing 4 Door category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/a1facdc0-2002-4d27-90eb-6421c247f326.jpg"
+                        width="40" />
+                    4 Door
+                </div>
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing 1000cc cars category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/211a3537-ecbd-4308-9dcf-3dbd6404ec6f.jpg"
+                        width="40" />
+                    1000cc cars
+                </div>
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing 1300cc cars category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/abcb50b5-e65b-4a83-90f5-5a751ad8467b.jpg"
+                        width="40" />
+                    1300cc cars
+                </div>
+                <div
+                    class="bg-white rounded border border-gray-200 p-3 flex flex-col items-center text-center text-[10px] text-gray-600 cursor-pointer hover:shadow-md">
+                    <img alt="Icon of a car representing 660cc cars category" class="mb-1" height="20"
+                        src="https://storage.googleapis.com/a1aa/image/3d2fc14e-9f31-4a49-3048-5b508c080335.jpg"
+                        width="40" />
+                    660cc cars
+                </div>
+            </div>
+            <div class="flex justify-center mt-4 space-x-1 text-gray-400 text-xs">
+                <span class="w-2 h-2 rounded-full bg-gray-400 inline-block">
+                </span>
+                <span class="w-2 h-2 rounded-full bg-gray-400 inline-block">
+                </span>
+                <span class="w-2 h-2 rounded-full bg-gray-400 inline-block">
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- PakWheels Offerings Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 py-8">
+        <h4 class="text-xs font-semibold mb-4">
+            PakWheels Offerings
+        </h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <!-- Each offering card -->
+            <div class="border border-gray-300 rounded p-3 flex items-center space-x-3">
+                <img alt="Car with hand icon representing Sell It For Me service" class="w-14 h-9 object-contain"
+                    height="40" src="https://storage.googleapis.com/a1aa/image/5a3cb94e-c5e7-4770-0850-e07b56dc625e.jpg"
+                    width="60" />
+                <div class="text-[9px]">
+                    <p class="text-blue-700 font-semibold mb-0.5">
+                        PakWheels
+                    </p>
+                    <p class="uppercase font-semibold">
+                        SELL IT FOR ME
+                    </p>
+                </div>
+            </div>
+            <div class="border border-gray-300 rounded p-3 flex items-center space-x-3">
+                <img alt="Car with blue check icon representing Auction Sheet Verification service"
+                    class="w-14 h-9 object-contain" height="40"
+                    src="https://storage.googleapis.com/a1aa/image/f4e7c8a6-2876-48ac-2f3c-29a48eb3a425.jpg"
+                    width="60" />
+                <div class="text-[9px]">
+                    <p class="text-blue-700 font-semibold mb-0.5">
+                        PakWheels
+                    </p>
+                    <p class="uppercase font-semibold">
+                        AUCTION SHEET VERIFICATION
+                    </p>
+                </div>
+            </div>
+            <div class="border border-gray-300 rounded p-3 flex items-center space-x-3">
+                <img alt="Blue car icon representing Car Inspection service" class="w-14 h-9 object-contain" height="40"
+                    src="https://storage.googleapis.com/a1aa/image/b9c2d8a2-33ca-4f1e-44b5-808764e7be43.jpg"
+                    width="60" />
+                <div class="text-[9px]">
+                    <p class="text-blue-700 font-semibold mb-0.5">
+                        PakWheels
+                    </p>
+                    <p class="uppercase font-semibold">
+                        CAR INSPECTION
+                    </p>
+                </div>
+            </div>
+            <div class="border border-gray-300 rounded p-3 flex items-center space-x-3">
+                <img alt="Car with blue check icon representing Car Insurance service" class="w-14 h-9 object-contain"
+                    height="40" src="https://storage.googleapis.com/a1aa/image/0e255d7e-dcfb-4156-5b2a-c037efe72e3a.jpg"
+                    width="60" />
+                <div class="text-[9px]">
+                    <p class="text-blue-700 font-semibold mb-0.5">
+                        PakWheels
+                    </p>
+                    <p class="uppercase font-semibold">
+                        CAR INSURANCE
+                    </p>
+                </div>
+            </div>
+            <div class="border border-gray-300 rounded p-3 flex items-center space-x-3">
+                <img alt="Blue car icon representing Car Finance service" class="w-14 h-9 object-contain" height="40"
+                    src="https://storage.googleapis.com/a1aa/image/ab0d09b4-5a0c-4b07-8dd0-67ed56aa0245.jpg"
+                    width="60" />
+                <div class="text-[9px]">
+                    <p class="text-blue-700 font-semibold mb-0.5">
+                        PakWheels
+                    </p>
+                    <p class="uppercase font-semibold">
+                        CAR FINANCE
+                    </p>
+                </div>
+            </div>
+            <div class="border border-gray-300 rounded p-3 flex items-center space-x-3">
+                <img alt="Car with card icon representing Car Registration service" class="w-14 h-9 object-contain"
+                    height="40" src="https://storage.googleapis.com/a1aa/image/8beca221-8fbe-4760-c6e3-8d3c10a9ba3d.jpg"
+                    width="60" />
+                <div class="text-[9px]">
+                    <p class="text-blue-700 font-semibold mb-0.5">
+                        PakWheels
+                    </p>
+                    <p class="uppercase font-semibold">
+                        CAR REGISTRATION
+                    </p>
+                </div>
+            </div>
+            <div class="border border-gray-300 rounded p-3 flex items-center space-x-3">
+                <img alt="Car with papers icon representing Ownership Transfer service" class="w-14 h-9 object-contain"
+                    height="40" src="https://storage.googleapis.com/a1aa/image/35850917-1ffa-4365-1bf9-58b94f27fcb2.jpg"
+                    width="60" />
+                <div class="text-[9px]">
+                    <p class="text-blue-700 font-semibold mb-0.5">
+                        PakWheels
+                    </p>
+                    <p class="uppercase font-semibold">
+                        OWNERSHIP TRANSFER
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
