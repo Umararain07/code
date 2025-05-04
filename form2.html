@@ -1,0 +1,224 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Registration Form - SMIT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            background: #f9fafb;
+        }
+
+        /* Custom scrollbar for better UX */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #7dbf00;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="relative pt-6 pb-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-b-lg shadow-lg">
+            <div class="flex justify-center">
+                <img alt="Saylani logo with text in green and blue" class="h-16 object-contain" height="64"
+                    src="https://storage.googleapis.com/a1aa/image/c7c3ed31-0f5a-467f-b8c8-fa378c2898e6.jpg"
+                    width="220" />
+            </div>
+            <div class="flex justify-center mt-3 space-x-6">
+                <a aria-label="Facebook" class="text-white hover:text-blue-200 text-lg transition" href="#"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a aria-label="Instagram" class="text-white hover:text-pink-300 text-lg transition" href="#"><i
+                        class="fab fa-instagram"></i></a>
+                <a aria-label="YouTube" class="text-white hover:text-red-400 text-lg transition" href="#"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+            <h1 class="text-center font-extrabold text-2xl sm:text-3xl mt-4 text-white drop-shadow-md">
+                Registration Form - SMIT
+            </h1>
+            <p class="text-center text-sm sm:text-base text-white mt-1 font-light drop-shadow">
+                Services - Education - Registration
+            </p>
+            <div class="absolute top-6 right-4">
+                <button
+                    class="text-sm text-blue-700 border border-blue-700 rounded-full px-4 py-1 hover:bg-blue-700 hover:text-white transition shadow-md">
+                    Student portal
+                </button>
+            </div>
+        </header>
+
+        <nav class="mt-6 border-b border-gray-300">
+            <ul class="flex justify-center space-x-10 text-sm font-medium text-gray-600">
+                <li>
+                    <a class="text-green-600 border-b-4 border-green-600 pb-2 inline-block font-semibold"
+                        href="#">Registration</a>
+                </li>
+                <li>
+                    <a class="hover:text-green-600 pb-2 inline-block transition" href="#">Download ID Card</a>
+                </li>
+                <li>
+                    <a class="hover:text-green-600 pb-2 inline-block transition" href="#">Results</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form action="#" method="POST" class="mt-8 max-w-5xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700 text-sm font-normal">
+                <div>
+                    <label for="country" class="block mb-2 font-semibold">Select country</label>
+                    <select id="country" name="country"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 transition">
+                        <option>Select country</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="city" class="block mb-2 font-semibold">Select city</label>
+                    <select id="city" name="city"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 transition">
+                        <option>Select city</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="course" class="block mb-2 font-semibold">Select course or event</label>
+                    <select id="course" name="course"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 transition">
+                        <option>Select course or event</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="proficiency" class="block mb-2 font-semibold">Select your computer proficiency</label>
+                    <select id="proficiency" name="proficiency"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 transition">
+                        <option>Select your computer proficiency</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="fullname" class="block mb-2 font-semibold">Full name</label>
+                    <input id="fullname" name="fullname" type="text" placeholder="Full name"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition" />
+                </div>
+                <div>
+                    <label for="fathername" class="block mb-2 font-semibold">Father name</label>
+                    <input id="fathername" name="fathername" type="text" placeholder="Father name"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition" />
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 font-semibold">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Email"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition" />
+                </div>
+                <div>
+                    <label for="phone" class="block mb-2 font-semibold">Phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Phone"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition" />
+                </div>
+                <div>
+                    <label for="cnic" class="block mb-2 font-semibold">CNIC</label>
+                    <input id="cnic" name="cnic" type="text" placeholder="CNIC"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition" />
+                </div>
+                <div>
+                    <label for="fathercnic" class="block mb-2 font-semibold">Father's CNIC (optional)</label>
+                    <input id="fathercnic" name="fathercnic" type="text" placeholder="Father's CNIC (optional)"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition" />
+                </div>
+                <div>
+                    <label for="dob" class="block mb-2 font-semibold">Date of birth</label>
+                    <input id="dob" name="dob" type="date"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition" />
+                </div>
+                <div>
+                    <label for="gender" class="block mb-2 font-semibold flex items-center gap-1">
+                        Select gender
+                        <span class="text-red-600 text-2xl leading-none select-none">•</span>
+                    </label>
+                    <select id="gender" name="gender"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 transition">
+                        <option>Select gender</option>
+                    </select>
+                </div>
+                <div class="md:col-span-2">
+                    <label for="address" class="block mb-2 font-semibold">Address</label>
+                    <input id="address" name="address" type="text" placeholder="Address"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition" />
+                </div>
+                <div class="md:col-span-2">
+                    <label for="qualification" class="block mb-2 font-semibold">Last qualification</label>
+                    <select id="qualification" name="qualification"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 transition">
+                        <option>Last qualification</option>
+                    </select>
+                </div>
+                <div class="md:col-span-2">
+                    <label for="laptop" class="block mb-2 font-semibold">Do you have a Laptop?</label>
+                    <select id="laptop" name="laptop"
+                        class="w-full border border-green-500 rounded-md px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 transition">
+                        <option>Do you have a Laptop?</option>
+                    </select>
+                </div>
+                <div class="md:col-span-2 flex space-x-4 items-start">
+                    <label for="picture-upload"
+                        class="border border-green-500 rounded-md w-24 h-24 flex flex-col justify-center items-center text-green-600 cursor-pointer hover:bg-green-50 transition select-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                        </svg>
+                        + Upload
+                        <input type="file" id="picture-upload" name="picture-upload" class="hidden" />
+                    </label>
+                    <div class="text-xs text-gray-600 max-w-[calc(100%-6rem)] leading-tight select-none">
+                        <p>With white or blue background</p>
+                        <p>File size must be less than 1MB</p>
+                        <p>File type: jpg, jpeg, png</p>
+                        <p>Upload your recent passport size picture</p>
+                        <p>Your face should be clearly visible without any Glasses</p>
+                    </div>
+                </div>
+            </div>
+
+            <ol class="mt-6 text-xs text-gray-600 list-decimal list-inside max-w-5xl mx-auto space-y-1 leading-snug">
+                <li>
+                    I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best
+                    of my knowledge. Further, I will abide by all the established and future regulations and policies of
+                    SWIT
+                </li>
+                <li>
+                    I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in
+                    any other activity, political or ethical, but learning during my stay in the program.
+                </li>
+                <li>Defiance will render my admission canceled at any point in time.</li>
+                <li>Upon completion, of the course, I will complete the required project by SWIT.</li>
+                <li>It's mandatory for female students to wear abaya/hijab in the class</li>
+            </ol>
+
+            <div class="mt-6 max-w-xs mx-auto">
+                <label class="flex items-center space-x-3 text-sm text-gray-700 cursor-pointer select-none">
+                    <input type="checkbox"
+                        class="form-checkbox h-5 w-5 text-green-600 border-gray-300 rounded focus:ring-green-400" />
+                    <span>I'm not a robot</span>
+                </label>
+                <div
+                    class="mt-3 border border-gray-300 rounded w-40 h-16 flex justify-center items-center text-xs text-gray-500 select-none shadow-inner bg-gray-50">
+                    reCAPTCHA<br />Privacy - Terms
+                </div>
+            </div>
+
+            <div class="mt-8 max-w-xs mx-auto">
+                <button type="submit"
+                    class="w-full bg-green-600 hover:bg-green-700 text-white text-sm font-semibold py-3 rounded-lg shadow-lg transition">
+                    SUBMIT
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
